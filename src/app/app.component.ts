@@ -42,7 +42,7 @@ export class AppComponent {
   title = "app";
   hide = true;
   //images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
-  images = ["../assets/carousel1.png", "../assets/carousel2.jpg", "../assets/carousel3.jpg"];
+  images = ["/assets/carousel1.jpg", "/assets/carousel2.jpg", "/assets/carousel3.jpg"];
   // left menu
   folders: Section[] = [
     {
