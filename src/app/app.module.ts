@@ -5,7 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './shared/material.module';
 import { FormsModule } from '@angular/forms';
-
+import {FlexLayoutModule } from '@angular/flex-layout';
+import { NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule,
+    NgbCarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
