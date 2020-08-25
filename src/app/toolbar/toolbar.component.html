@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button mat-button (click)="toggleSlide()" [hidden]="isShowMenu"><!-- (click)="slidemenu.toggle() -->
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <button mat-button routerLink="/">
+    <mat-icon inline="true">home</mat-icon>Blind Dating
+  </button>
+
+
+
+  <div class="right-spacer">
+    <button mat-button routerLink="/sign_in">Sign in</button>
+    <button mat-button>Sign up</button>
+  </div>
+  <!-- <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  >
+    <mat-icon>share</mat-icon>
+  </button>-->
+</mat-toolbar>

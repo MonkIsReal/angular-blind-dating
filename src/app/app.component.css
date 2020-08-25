@@ -1,35 +1,15 @@
-.mat-list-icon {
-  color: rgba(0, 0, 0, 0.54);
-}
-button.mat-button .mat-icon,
-a.mat-button .mat-icon,
-a.mat-raised-button .mat-icon,
-a.mat-flat-button .mat-icon,
-a.mat-stroked-button .mat-icon {
-  vertical-align: -0.2em;
-  /*font-size: 1.25em;*/
-}
 
-.example-spacer {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-
-}
-
-.container{
-  max-width: 400px;
-}
-
-.signinform{
-  display: flex;
-  flex-direction: column;
-}
-.signinform > * {
-  width: 100%;
-}
 
 .mg-10{
   margin: 10px;
 }
+
+
+/*
+mat-button-toggle {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+}*/

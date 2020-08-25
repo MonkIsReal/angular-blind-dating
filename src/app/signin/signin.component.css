@@ -1,0 +1,15 @@
+.container{
+  max-width: 400px;
+}
+
+.signinform{
+  display: flex;
+  flex-direction: column;
+}
+.signinform > * {
+  width: 100%;
+}
+
+.mg-10{
+  margin: 10px;
+}

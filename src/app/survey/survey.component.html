@@ -1,0 +1,41 @@
+<div
+class="container mg-10"
+fxLayout="column"
+fxLayoutAlign="space-around center"
+>
+
+<mat-card class="mg-10">
+  <mat-card-title>Dating profile survey</mat-card-title>
+
+  <div class="signinform">
+    <mat-progress-bar mode="determinate" [value]="barProgress"></mat-progress-bar>
+    <!-- <div *ngFor="let question of questions" [@flyInOut]="'in'"> -->
+    <div *ngFor="let question of questions">
+      <div class="mat-typography mg-10">
+        {{ question.questionName }}
+      </div>
+      <mat-button-toggle-group
+        #group="matButtonToggleGroup"
+        class="mg-10"
+        (valueChange)="onValueQuestionChange($event, question)"
+      >
+        <mat-button-toggle [value]="0" >
+          {{ question.questionChoice[0] }}
+        </mat-button-toggle>
+        <mat-button-toggle [value]="1" >
+          {{ question.questionChoice[1] }}
+        </mat-button-toggle>
+        <mat-button-toggle [value]="2" >
+          {{ question.questionChoice[2] }}
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+      <div class="example-selected-value mat-typography">
+        Selected value: {{ group.value }}
+      </div>
+    </div>
+  </div>
+
+</mat-card>
+
+<button mat-raised-button color="primary" (click)="submitForm()" [disabled]="barProgress<100">Submit (don't be affraid)</button>
+</div>
