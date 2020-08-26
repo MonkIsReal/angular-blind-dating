@@ -20,35 +20,35 @@ export class SurveyComponent implements OnInit {
   questions: Question[] = [
     {
       questionId:1,
-      questionName: "how long are you single?",
+      questionName: "How long are you single?",
       questionChoice: ["> 1 year", "< 6 months","< 1 month" ],
       //index of choices
       questionAnswer: 0,
     },
     {
       questionId:2,
-      questionName: "how much do you bring to the table on a date?",
-      questionChoice: [">50 euros", "< 50 euro>", "<20 euros>"],
+      questionName: "How much do you bring to the table on a date?",
+      questionChoice: [">50 euros", "< 50 euro", "<20 euros"],
       //index of choices
       questionAnswer: 0,
     },
     {
       questionId:3,
-      questionName: "are you affraid of talking to girls",
+      questionName: "Are you affraid of talking to girls",
       questionChoice: ["yes, a lot ", "sometimes", "no"],
       //index of choices
       questionAnswer: 0,
     },
     {
       questionId:4,
-      questionName: "is your idea offend girls? ",
+      questionName: "Does your opinions often offend girls? ",
       questionChoice: ["I try to please them ", "sometimes", "a lot"],
       //index of choices
       questionAnswer: 0,
     },
     {
       questionId:5,
-      questionName: "how often girls hits on you ?",
+      questionName: "How often girls hits on you ?",
       questionChoice: ["never ", "once a month", "I often end up in their appartment"],
       //index of choices
       questionAnswer: 0,
